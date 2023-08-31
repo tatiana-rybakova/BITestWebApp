@@ -1,0 +1,9 @@
+﻿<form method="post" enctype="multipart/form-data">
+    <h3>Сортировка целых чисел</h3>
+    <div>
+        <label>Введите числа через пробел</label>
+        <input name="gotString" required pattern="^[0-9\s-]+$" />
+    </div>
+    <br />
+    <button class="btn btn-dark" type="submit" asp-controller="home" asp-action="sort">Сортировать</button>
+</form>

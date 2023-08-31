@@ -1,0 +1,9 @@
+﻿<form method="post" enctype="multipart/form-data">
+    <h3>Проверка на палиндром</h3>
+    <div>
+        <label>Введите строку без пробелов и знаков препинания</label>
+        <input name="gotString" required pattern="^[А-Яа-яЁё\s]+$" />
+    </div>
+    <br />
+    <button class="btn btn-dark" type="submit" asp-controller="home" asp-action="CheckPalindrom">Проверить</button>
+</form>
